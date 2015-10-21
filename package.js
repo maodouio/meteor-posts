@@ -1,5 +1,5 @@
 Package.describe({
-  name: 'maodou:posts',
+  name: 'maodouio:posts',
   version: '0.0.1',
   // Brief, one-line summary of the package.
   summary: '',
@@ -19,6 +19,6 @@ Package.onUse(function(api) {
 Package.onTest(function(api) {
   api.use('ecmascript');
   api.use('tinytest');
-  api.use('maodou:posts');
+  api.use('maodouio:posts');
   api.addFiles('posts-tests.js');
 });
