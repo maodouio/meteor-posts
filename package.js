@@ -1,6 +1,6 @@
 Package.describe({
   name: 'maodouio:posts',
-  version: '0.0.1',
+  version: '0.0.2',
   // Brief, one-line summary of the package.
   summary: 'Maodou.io posts package, A meteor package that provides posts pages at /posts',
   // URL to the Git repository containing the source code for this package.
@@ -14,11 +14,11 @@ Package.onUse(function(api) {
   // version
   api.versionsFrom('1.2.0.2');
   // package
-  api.use('iron:router', ["server", "client"]);
-  api.use('aldeed:autoform', ["server", "client"]);
-  api.use('aldeed:collection2', ["server", "client"]);
-  api.use('aldeed:simple-schema', ["server", "client"]);
-  api.use('matb33:collection-hooks', ["server", "client"]);
+  api.use('iron:router@1.0.12', ["server", "client"]);
+  api.use('aldeed:autoform@5.1.2', ["server", "client"]);
+  api.use('aldeed:collection2@2.3.3', ["server", "client"]);
+  api.use('aldeed:simple-schema@1.3.2', ["server", "client"]);
+  api.use('matb33:collection-hooks@0.8.0', ["server", "client"]);
 
   // template
   api.use('templating');
