@@ -1,6 +1,6 @@
 Package.describe({
   name: 'maodouio:posts',
-  version: '0.0.2',
+  version: '0.0.4',
   // Brief, one-line summary of the package.
   summary: 'Maodou.io posts package, A meteor package that provides posts pages at /posts',
   // URL to the Git repository containing the source code for this package.
@@ -19,9 +19,12 @@ Package.onUse(function(api) {
   api.use('aldeed:collection2@2.3.3', ["server", "client"]);
   api.use('aldeed:simple-schema@1.3.2', ["server", "client"]);
   api.use('matb33:collection-hooks@0.8.0', ["server", "client"]);
+  api.use('twbs:bootstrap@3.3.4', ["server", "client"]);
 
-  // template
-  api.use('templating');
+  // mongo and template
+  // https://zh.discovermeteor.com/chapters/creating-a-meteor-package/
+  api.use(['minimongo', 'mongo-livedata', 'templating'], 'client');
+
   // file
   // ls -l | awk '{print "api.addFiles(\""$9"\", \"client\");"}'
   api.addFiles('posts.js');
@@ -41,11 +44,4 @@ Package.onUse(function(api) {
   api.addFiles("server/publications.js", "server");
 
   api.export('Posts');
-});
-
-Package.onTest(function(api) {
-  api.use('ecmascript');
-  api.use('tinytest');
-  api.use('maodouio:posts');
-  api.addFiles('posts-tests.js');
 });

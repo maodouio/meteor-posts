@@ -2,9 +2,10 @@
 https://github.com/maodouio/meteor-posts
 
 ## Example App
-You can view an example application (without customization) at
-http://maodouio-posts.meteor.com
-[repo](https://github.com/maodouio/meteor-skeleton)
+You can view an example application at
+
+* http://maodouio-posts.meteor.com
+* [repo](https://github.com/maodouio/meteor-skeleton)
 
 ## Installation
 ```
