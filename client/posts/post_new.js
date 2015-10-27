@@ -17,7 +17,7 @@ AutoForm.hooks({
     },
     onSuccess: function (operation, result, template) {
       console.log('New Post inserted successfully!');
-      Router.go('postsIndex', {_id: result});
+      Router.go('postsShow', {_id: result});
     },
 
     onError: function(operation, error, template) {
