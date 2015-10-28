@@ -12,7 +12,7 @@ Package.describe({
 
 Package.onUse(function(api) {
   // version
-  api.versionsFrom('1.2.0.2');
+  // api.versionsFrom('1.2.0.2');
   // package
   api.use('iron:router@1.0.12', ["server", "client"]);
   api.use('aldeed:autoform@5.1.2', ["server", "client"]);
